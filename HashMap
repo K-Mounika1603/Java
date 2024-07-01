@@ -1,0 +1,35 @@
+package com.mouni;
+import java.util.HashMap;
+public class DemoHash_Map {
+		public static void main(String[] args) {
+			//creating HashMap with integer and string
+	HashMap<Integer,String> countries=new HashMap<Integer,String>();
+	//Adding values to the HashMap
+	countries.put(1,"India");
+	countries.put(2,"SwitzerLand");
+	countries.put(3,"Japan");
+	countries.put(4,"Bangladesh");
+	countries.put(5,"Srilanka");
+	//This method prints the boolean values 
+	System.out.println(countries.containsValue("America"));
+	//This method prints the element of the given value
+	System.out.println(countries.get(1));
+	//This method removes the element of the Given value
+	System.out.println(countries.remove(4,"Japan"));
+	//This method shows the keys and values of HashMap
+	System.out.println(countries.entrySet());
+	//This method prints the Keys of the HashMap
+	System.out.println(countries.keySet());
+	//This checks the size of the HashMap
+	System.out.println(countries.size());
+	//This checks the HashMap is empty or not
+	System.out.println(countries.isEmpty());
+	//This method prints the boolean values 
+	System.out.println(countries.containsKey(5));
+	//Adding value to the HashMap
+	countries.put(6,"China");
+	//This prints the HashMap elements 
+	System.out.println(countries);
+		}
+
+	}
